@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局</title>
+
+    <script src="../../commonLib/jquery-3.2.1.js"></script>
+    <script src="../../commonLib/domutils.js"></script>
+
+    <script type="text/javascript">
+        function drawCanvas() {
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#FF0000';
+            ctx.fillRect(0, 0, 100, 50);
+        }
+
+        function drawLine() {
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.moveTo(0, 0);
+            ctx.lineTo(100,100);
+            ctx.strokeStyle = '#00FF00';
+            ctx.stroke();
+        }
+        
+        function drawText() {
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.font = '30px Arial';
+//            ctx.fillText('hello world', 10, 50);
+            ctx.strokeText('hello world', 10, 50);
+        }
+        
+        function colorLinearGradient() {
+            var ctx = domutils('myCanvas').getContext('2d');
+            var grd = ctx.createLinearGradient(0, 0, 200, 0);
+            grd.addColorStop(0, 'red');
+            grd.addColorStop(1, 'green');
+
+            ctx.fillStyle = grd;
+            ctx.fillRect(0, 0, 100, 100);
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <div style="height: 50px; align-content: center; display: flex">
+        <button onclick="colorLinearGradient()" style="height: 30px">测试</button>
+    </div>
+
+    <canvas id="myCanvas" width="200" height="200" style="border: 1px solid rebeccapurple">
+
+    </canvas>
+</body>
+</html>

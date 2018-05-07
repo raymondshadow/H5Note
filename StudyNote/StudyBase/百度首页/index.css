@@ -1,0 +1,113 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background: url("./imgs/bg.jpg");
+    background-size: cover;
+}
+
+#div_header {
+    background-color: rgba(0,0,0,0.2);
+    text-align: right;
+    height: 42px;
+    line-height: 42px;
+}
+
+#div_header ul {
+    display: inline-block;
+}
+#div_header li {
+    display: inline-block;
+}
+#div_header li a {
+    color: white;
+    padding-right: 3px;
+}
+#div_header input {
+    margin: 0 10px 0 10px;
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+/*中间内容*/
+#div_content{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#div_content > img {
+    width: 270px;
+    height: 129px;
+}
+#div_content .search{
+    width: 600px;
+    height: 35px;
+    margin: 0 auto 30px;
+}
+#div_content .search .inputText {
+    width: 500px;
+    height: 100%;
+    /*设置内边距向里缩*/
+    box-sizing: border-box;
+    /*左内边距*/
+    padding-left: 10px;
+    /*字体*/
+    font-size: 16px;
+}
+#div_content .search .inputText:focus {
+    border: solid 1px blue;
+    outline-style: none;
+}
+
+#div_content .search .inputBtn {
+    color: white;
+    background-color: blue;
+    border: none;
+    font-size: 16px;
+    height: 35px;
+    width: 100px;
+    line-height: 35px;
+    text-align: center;
+    float: right;
+}
+
+#div_content .common_group {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#div_content .common_group img {
+    width: 100px;
+    height: 90px;
+    /*图片之间的间距*/
+    margin: 0 5px;
+}
+
+#div_content .common_group img:hover {
+    opacity: 0.5;
+}
+
+/*尾部*/
+#div_bottom {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+#div_bottom .top-footer {
+    margin-bottom: 10px;
+}
+
+#div_bottom a {
+    color: black;
+}
+
+#div_bottom .bottom-footer {
+    background-color: rgba(0,0,0,0.2);
+    height: 50px;
+}
+

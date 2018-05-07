@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>标准流以及其他方式布局</title>
+
+    <style type="text/css">
+        *{
+            margin: 0;
+        }
+
+        #main {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            background-color: orange;
+        }
+
+        .test1 {
+            background: aqua;
+            float: left;
+            width: 150px;
+            height: 50px;
+        }
+
+        .test2 {
+            background: aquamarine;
+            float: right;
+            width: 150px;
+            height: 50px;
+        }
+
+        .test3 {
+            background-color: bisque;
+            position: absolute;
+            right: 0px;
+            bottom: 50%;
+        }
+
+        .test4 {
+            background-color: blue;
+            position: fixed;
+            left: 0px;
+            top: 50%;
+        }
+
+        .test5 {
+            background-color: blueviolet;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="main">
+    <div class="test1">
+        float 悬浮left 布局
+    </div>
+
+    <div class="test2">
+        float 悬浮right 布局
+    </div>
+
+    <div class="test3">
+        position absolute 布局 right 居中
+    </div>
+
+    <div class="test4">
+        position fix 布局
+    </div>
+
+    <div class="test5">
+        标准流布局
+    </div>
+</div>
+
+</body>
+</html>
